@@ -1,0 +1,18 @@
+.testimonials {
+  padding-top: 135px;
+  padding-bottom: 80px;
+
+  @include tablet {
+    padding-bottom: 245px;
+  }
+}
+
+.testimonials__heading {
+  margin: 0 0 3px;
+  text-align: center;
+}
+
+.testimonials__lead {
+  margin: 0 0 100px;
+  text-align: center;
+}

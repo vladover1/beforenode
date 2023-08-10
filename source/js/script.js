@@ -1,0 +1,21 @@
+import { initAppears } from './modules/appear';
+import { initCheckHere } from './modules/check-here';
+import { initForms } from './modules/form';
+import { initMaps } from './modules/map';
+import { initNav } from './modules/nav';
+import { initProgress } from './modules/progress';
+import { initServices } from './modules/services';
+import { initSliders } from './modules/slider';
+import { initTimePlaces } from './modules/time-place';
+import { initWelcome } from './modules/welcome';
+
+initAppears();
+initForms();
+initMaps();
+initNav();
+initCheckHere();
+initProgress();
+initServices();
+initSliders();
+initTimePlaces();
+initWelcome();

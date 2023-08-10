@@ -1,0 +1,38 @@
+html {
+  font-size: 16px;
+  line-height: 1.35;
+  font-family: "Open Sans", sans-serif;
+  color: $color-blacky;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration-skip-ink: none;
+  color: inherit;
+}
+
+a[href],
+button:not([disabled]) {
+  transition: 0.3s ease-in-out;
+  transition-property: opacity, color, background-color, border-color;
+}
+
+picture,
+source {
+  display: contents;
+}

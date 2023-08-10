@@ -1,0 +1,19 @@
+@each $weight in 400, 600, 700 {
+  @font-face {
+    font-weight: $weight;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/open-sans-#{$weight}.woff2") format("woff2");
+  }
+}
+
+@each $weight in 500, 600 {
+  @font-face {
+    font-weight: $weight;
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/poppins-#{$weight}.woff2") format("woff2");
+  }
+}

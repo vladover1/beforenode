@@ -1,0 +1,22 @@
+.page {
+  padding-top: 20px;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+}
+
+.page__header {
+  position: sticky;
+  top: 0;
+  z-index: 1001;  // Leaflet is dumb
+
+  [data-progress] {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: $color-green;
+  }
+}

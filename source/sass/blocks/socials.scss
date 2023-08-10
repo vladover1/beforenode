@@ -1,0 +1,38 @@
+.socials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 37px);
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  display: block;
+  width: 37px;
+  height: 37px;
+  color: $color-white;
+  background-color: $color-medium-gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $color-green;
+  }
+
+  &--facebook {
+    background-image: url("../img/facebook.webp");
+  }
+
+  &--twitter {
+    background-image: url("../img/twitter.webp");
+  }
+
+  &--instagram {
+    background-image: url("../img/instagram.webp");
+  }
+
+  &--linkedin {
+    background-image: url("../img/linkedin.webp");
+  }
+}

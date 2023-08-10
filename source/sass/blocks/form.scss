@@ -1,0 +1,64 @@
+.form {
+  display: grid;
+  gap: 58px 110px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__group {
+  position: relative;
+
+  &--full {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 40px 12px;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: $color-lighter-gray;
+  border: none;
+  border-radius: 20px 0;
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+  }
+
+  &::placeholder {
+    color: $color-dark-gray;
+    opacity: 1;
+  }
+}
+
+.form__error {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  display: none;
+  margin-top: 2px;
+  padding: 10px;
+  color: $color-red;
+  background-color: $color-white;
+}
+
+.form__submit {
+  justify-self: center;
+  grid-column: 1 / -1;
+}
+
+.form.is-validable {
+  .form__field:invalid {
+    color: $color-red;
+    box-shadow: inset 0 0 0 2px $color-red;
+
+    &+.form__error {
+      display: block;
+    }
+  }
+}

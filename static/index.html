@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DECBASE</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+  <header class="header page__header container">
+    <img src="img/logo.webp" width="152" height="47" alt="DECBASE Logo.">
+
+    <nav class="header__nav">
+      <ul class="header__toc" data-nav>
+        <li>
+          <a class="header__link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="header__link" href="#project">Project</a>
+        </li>
+        <li>
+          <a class="header__link" href="#services">Services</a>
+        </li>
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#blog">Blog</a>
+        </li>
+        <li>
+          <a class="header__link" href="#works">Shop</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <a class="header__link header__link--primary" href="#!">Sign Up</a>
+    </nav>
+
+    <div data-progress></div>
+  </header>
+
+  <main>
+    <section class="hero container" id="project">
+      <div>
+        <h2 class="hero__heading heading">Modern interior</h2>
+        <p class="hero__lead">Create Your Interior Design.</p>
+        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <a class="button" href="#!">Contact</a>
+      </div>
+
+      <figure class="hero__image image">
+        <img src="img/hero.webp" width="704" height="615" alt="Interior example.">
+      </figure>
+    </section>
+
+    <section class="services container" id="services" data-services>
+      <h2 class="services__heading heading">What we do</h2>
+      <p class="services__lead lead">Our Service</p>
+
+      <ul class="services__filters" data-filters>
+        <li>
+          <button class="services__filter is-active" data-filter="">All</button>
+        </li>
+        <li>
+          <button class="services__filter" data-filter="1">Interior design</button>
+        </li>
+        <li>
+          <button class="services__filter" data-filter="2">Architecture</button>
+        </li>
+        <li>
+          <button class="services__filter" data-filter="3">Planning</button>
+        </li>
+      </ul>
+
+      <div class="services__output">
+        <ul class="services__list" data-list></ul>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="about__content">
+        <figure class="about__image image image--alter">
+          <img src="img/about-1.webp" width="681" height="712" alt="Interior example.">
+        </figure>
+        <div>
+          <h2 class="about__heading heading">About us</h2>
+          <p class="about__lead lead">Interioris The Will of An Epoch Mextreo</p>
+          <p class="about__text">There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form injected humour, or randomised words which don't look even slightly
+            believable.If you are going to use a passage of Lorem Ipsum, sure there isn't anything embarrassing hidden
+            the middleof text. All the Lorem Ipsum generators on the Internettend to repeat predefined chunks as
+            necessary,making this the first true generator on the Internet.</p>
+          <a class="button" href="#!">Learn more</a>
+        </div>
+      </div>
+
+      <div class="about__content">
+        <figure class="about__image image">
+          <img src="img/about-2.webp" width="681" height="712" alt="Interior example.">
+        </figure>
+        <div>
+          <img src="img/20.webp" width="403" height="212" alt="20">
+          <p class="about__accent">Years Of Successful Working The Market</p>
+          <a class="button" href="#!">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="works container" id="works">
+      <h2 class="works__lead lead">3000+ Completed Work Which<br>WE have Successfully Done</h2>
+
+      <ul class="works__list">
+        <li class="works__item">
+          <div class="works__card">
+            <p class="works__value">980</p>
+            <p class="works__key">Project</p>
+          </div>
+        </li>
+        <li class="works__item">
+          <div class="works__card">
+            <p class="works__value">520</p>
+            <p class="works__key">Happy Client</p>
+          </div>
+        </li>
+        <li class="works__item">
+          <div class="works__card">
+            <p class="works__value">330</p>
+            <p class="works__key">Winners</p>
+          </div>
+        </li>
+        <li class="works__item">
+          <div class="works__card">
+            <p class="works__value">120</p>
+            <p class="works__key">Recoment</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="testimonials container">
+      <h2 class="testimonials__heading heading">Testimonials</h2>
+      <p class="testimonials__lead lead">Client says about us</p>
+
+      <div class="slider" data-slider>
+        <div class="slider__controls">
+          <button class="slider__control slider__control--prev" type="button" data-slider-prev>
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
+          <button class="slider__control slider__control--next" type="button" data-slider-next>
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
+        </div>
+
+        <div class="slider__body" data-slider-body>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <blockquote class="quote slider__slide">
+                <img class="quote__image" src="img/person-1.webp" alt="Louis Saville's avatar." loading="lazy">
+                <cite class="quote__author">
+                  <span class="quote__name">Louis Saville</span>
+                  <span class="quote__note">/CEO at Google inc</span>
+                </cite>
+                <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote class="quote slider__slide">
+                <img class="quote__image" src="img/person-2.webp" alt="Rekha Varadwaz's avatar." loading="lazy">
+                <cite class="quote__author">
+                  <span class="quote__name">Rekha Varadwaz</span>
+                  <span class="quote__note">/Manager at Nike inc</span>
+                </cite>
+                <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote class="quote slider__slide">
+                <img class="quote__image" src="img/person-1.webp" alt="Louis Saville's avatar." loading="lazy">
+                <cite class="quote__author">
+                  <span class="quote__name">Louis Saville</span>
+                  <span class="quote__note">/CEO at Google inc</span>
+                </cite>
+                <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote class="quote slider__slide">
+                <img class="quote__image" src="img/person-2.webp" alt="Rekha Varadwaz's avatar." loading="lazy">
+                <cite class="quote__author">
+                  <span class="quote__name">Rekha Varadwaz</span>
+                  <span class="quote__note">/Manager at Nike inc</span>
+                </cite>
+                <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote class="quote slider__slide">
+                <img class="quote__image" src="img/person-1.webp" alt="Louis Saville's avatar." loading="lazy">
+                <cite class="quote__author">
+                  <span class="quote__name">Louis Saville</span>
+                  <span class="quote__note">/CEO at Google inc</span>
+                </cite>
+                <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote class="quote slider__slide">
+                <img class="quote__image" src="img/person-2.webp" alt="Rekha Varadwaz's avatar." loading="lazy">
+                <cite class="quote__author">
+                  <span class="quote__name">Rekha Varadwaz</span>
+                  <span class="quote__note">/Manager at Nike inc</span>
+                </cite>
+                <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog container" id="blog" data-appear>
+      <h2 class="blog__heading heading">Latest news</h2>
+      <p class="blog__lead lead">From Our Blog</p>
+
+      <ul class="blog__list">
+        <li class="blog__item">
+          <figure class="blog__image image image--small">
+            <img src="img/blog-1.webp" width="556" height="388" alt="Interior example.">
+          </figure>
+
+          <div class="blog__content">
+            <h3 class="blog__title">2020 Interior Design Trends</h3>
+            <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut
+              labore et dolore magna aliqua.</p>
+            <a class="button" href="#!">Continue reading...</a>
+          </div>
+        </li>
+
+        <li class="blog__item">
+          <figure class="blog__image image image--small">
+            <img src="img/blog-2.webp" width="556" height="388" alt="Interior example.">
+          </figure>
+
+          <div class="blog__content">
+            <h3 class="blog__title">28 Notable Product at ARC Interior Design</h3>
+            <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut
+              labore et dolore magna aliqua.</p>
+            <a class="button" href="#!">Continue reading...</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sign-up container" id="contact">
+      <h2 class="sign-up__heading">Don’t forget to sign up</h2>
+      <p class="sign-up__text">Find out early about all upcoming promotions and new product releases with our
+        newsletter.</p>
+
+      <form class="sign-up__form form" action="#" novalidate data-form>
+        <label class="form__group" aria-label="Enter your name...">
+          <input class="form__field" name="firstname" type="text" pattern="^[A-Z][a-z]*$"
+            placeholder="Enter your name..." required>
+          <span class="form__error">Must be a capitalized latin word</span>
+        </label>
+        <label class="form__group" aria-label="Enter your surname...">
+          <input class="form__field" name="lastname" type="text" pattern="^[A-Z][a-z]*$"
+            placeholder="Enter your surname..." required>
+          <span class="form__error">Must be a capitalized latin word</span>
+        </label>
+        <label class="form__group form__group--full" aria-label="Enter your e-mail...">
+          <input class="form__field" name="email" type="email" placeholder="Enter your e-mail..." required>
+          <span class="form__error">Must be a valid email</span>
+        </label>
+
+        <button class="form__submit button" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="map" id="map"></div>
+    <div class="footer__content container">
+      <div>
+        <img src="img/logo.webp" width="152" height="47" alt="DECBASE Logo.">
+        <p class="footer__text">But i must explain to you all this mistaken idea of dencouncing pleasure.</p>
+      </div>
+
+      <h2 class="visually-hidden">Catalog</h2>
+      <div>
+        <h3 class="footer__title">Quick Links</h3>
+        <ul class="footer__links">
+          <li>
+            <a class="footer__link" href="#!">About Our Company</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Services WE provide</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Career &amp; Opportunity</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Privacy &amp; policy</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Contact US</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Company</h3>
+        <ul class="footer__links">
+          <li>
+            <a class="footer__link" href="#!">About Company</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Our Testimonials</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Latest News</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Our misson</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Get a free Quot</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Contact us</h3>
+        <ul class="footer__links">
+          <li>
+            <a class="footer__link" href="#!">Sagrada Familia, Herba</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#!">Street Front USA</a>
+          </li>
+          <li>
+            <a class="footer__link" href="mailto:brandoxide@gmail.com">brandoxide@gmail.com</a>
+          </li>
+          <li>
+            <a class="footer__link" href="tel:002568423591">002-568423591</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Follow Us</h3>
+        <ul class="footer__socials socials">
+          <li>
+            <a class="socials__link socials__link--facebook" href="#!">
+              <span class="visually-hidden">Our facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--twitter" href="#!">
+              <span class="visually-hidden">Our twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--instagram" href="#!">
+              <span class="visually-hidden">Our instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--linkedin" href="#!">
+              <span class="visually-hidden">Our linkedin</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copyright container">
+      Copyright @
+      <time data-year>2020</time>
+      <a href="#!">Brandoxide</a>. All right reserved.
+    </p>
+  </footer>
+
+  <div class="message message--animated is-hidden" data-message-name="Sigma">
+    <p class="message__text">Exactly <span data-day>today</span> for users with the name Sigma at checkout 120% discount
+      =)</p>
+  </div>
+  <div class="message is-hidden" data-message-name="check-here">
+    <p class="message__text">
+      Are you still here?
+      <button class="message__button button" type="button">Yes</button>
+    </p>
+  </div>
+
+  <div class="welcome" aria-hidden="true">
+    <div class="welcome__ground">
+      <div class="welcome__winds">
+        <div class="welcome__wind">
+          <svg width="80" height="80">
+            <use href="img/sprite.svg#wind"></use>
+          </svg>
+        </div>
+        <div class="welcome__wind">
+          <svg width="80" height="80">
+            <use href="img/sprite.svg#wind"></use>
+          </svg>
+        </div>
+        <div class="welcome__wind">
+          <svg width="80" height="80">
+            <use href="img/sprite.svg#wind"></use>
+          </svg>
+        </div>
+        <div class="welcome__wind">
+          <svg width="80" height="80">
+            <use href="img/sprite.svg#wind"></use>
+          </svg>
+        </div>
+        <div class="welcome__wind">
+          <svg width="80" height="80">
+            <use href="img/sprite.svg#wind"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

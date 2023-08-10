@@ -1,0 +1,62 @@
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin green-link {
+  border: 5px solid transparent;
+
+  &:hover {
+    color: $color-green;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: currentColor;
+  }
+}
+
+@mixin icon($icon, $mask: true) {
+  $value: url("../img/sprite.svg##{$icon}") no-repeat center / 100%;
+
+  @if $mask {
+    mask: $value;
+  }
+
+  @else {
+    background: $value;
+  }
+}
+
+@mixin decor ($width, $height, $right: false) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 80px;
+    z-index: -1;
+    width: #{$width}px;
+    height: #{$height}px;
+    background-image: url("../img/sprite.svg#decor");
+
+    @if $right {
+      right: 0;
+    }
+
+    @else {
+      left: 0;
+    }
+  }
+}

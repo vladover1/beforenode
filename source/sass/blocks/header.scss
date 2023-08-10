@@ -1,0 +1,50 @@
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 160px 1fr;
+  padding: 10px;
+  background-color: $color-white;
+
+  @include tablet {
+    gap: 60px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: inherit;
+  gap: 14px;
+}
+
+.header__toc {
+  display: none;
+  list-style: none;
+
+  @include tablet {
+    display: contents;
+  }
+}
+
+.header__link {
+  display: block;
+  padding: 0 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 15px 0;
+
+  &--primary {
+    margin-left: 18px;
+    color: $color-white;
+    text-transform: none;
+    background-color: $color-brown;
+  }
+
+  &.is-active {
+    color: $color-dark-gray;
+  }
+
+  @include green-link;
+}

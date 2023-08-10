@@ -1,0 +1,32 @@
+.image {
+  display: table;
+  border: 2px solid $color-brown;
+  border-radius: 140px 0;
+
+  img {
+    display: block;
+    border-radius: inherit;
+  }
+
+  @include tablet {
+    img {
+      position: relative;
+      top: -32px;
+      left: -32px;
+      border-radius: 108px 0;
+    }
+
+    &--alter img {
+      top: auto;
+      right: -32px;
+      bottom: -32px;
+      left: auto;
+    }
+
+    &--small img {
+      top: -16px;
+      left: -16px;
+      border-radius: 124px 0;
+    }
+  }
+}

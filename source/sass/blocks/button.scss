@@ -1,0 +1,16 @@
+.button {
+  box-sizing: border-box;
+  padding: 9px 25px;
+  font-weight: 700;
+  font-size: 18px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  background-color: $color-green;
+  border-radius: 20px 0;
+  cursor: pointer;
+  user-select: none;
+
+  @include green-link;
+}

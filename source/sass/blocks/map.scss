@@ -1,0 +1,8 @@
+.map {
+  min-height: 420px;
+  border-bottom: 1px solid $color-darker-gray;
+
+  @include tablet {
+    min-height: 540px;
+  }
+}

@@ -1,0 +1,129 @@
+.services {
+  padding-top: 150px;
+
+  @include tablet {
+    padding-bottom: 150px;
+
+    @include decor(242, 255, true);
+  }
+}
+
+.services__heading {
+  margin: 0;
+}
+
+.services__lead {
+  margin: 0 0 40px;
+}
+
+.services__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 0 110px;
+  padding: 0;
+  list-style: none;
+
+  @include tablet {
+    gap: 75px;
+  }
+}
+
+.services__filter {
+  min-width: 200px;
+  padding: 7px 20px;
+  font-weight: 700;
+  color: $color-white;
+  text-transform: uppercase;
+  background-color: $color-green;
+  border-radius: 20px;
+  cursor: pointer;
+
+  @include green-link;
+
+  &.is-active {
+    color: $color-green;
+    background-color: transparent;
+    border-color: currentColor;
+  }
+}
+
+.services__output {
+  @include tablet {
+    min-height: 375px;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include tablet {
+    gap: 90px;
+  }
+
+  li {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    padding-left: 104px;
+    text-decoration: none;
+    background-color: $color-white;
+    border-radius: 60px 0;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.14);
+
+    @include desktop {
+      width: calc(100% / 3 - 60px);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 64px;
+      height: 64px;
+      background-image: url("../img/filter-1.webp");
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+
+  li[data-id="2"] {
+    color: $color-white;
+    background-color: $color-brown;
+
+    p {
+      color: inherit;
+    }
+
+    &::before {
+      background-image: url("../img/filter-2.webp");
+    }
+  }
+
+  li[data-id="3"] {
+    &::before {
+      background-image: url("../img/filter-3.webp");
+    }
+  }
+
+  h3 {
+    margin: 0 0 4px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-dark-gray;
+    letter-spacing: -0.18px;
+  }
+}

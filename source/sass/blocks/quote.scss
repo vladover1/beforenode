@@ -1,0 +1,48 @@
+.quote {
+  position: relative;
+  padding: 120px 20px 30px 20px;
+  border-radius: 70px 0;
+  box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+
+  @include tablet {
+    padding: 40px 40px 60px 95px;
+  }
+}
+
+.quote__image {
+  position: absolute;
+  top: -30px;
+  left: 40px;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 35px 0;
+
+  @include tablet {
+    top: 44px;
+    left: -60px;
+  }
+}
+
+.quote__author {
+  display: block;
+  margin: 0 0 8px;
+  font-style: normal;
+}
+
+.quote__name {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.quote__note {
+  font-size: 16px;
+  color: $color-dark-gray;
+}
+
+.quote__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-dark-gray;
+}

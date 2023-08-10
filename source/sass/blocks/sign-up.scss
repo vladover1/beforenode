@@ -1,0 +1,41 @@
+.sign-up {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.sign-up__heading {
+  position: relative;
+  display: table;
+  margin: 0 auto 40px;
+  padding-bottom: 16px;
+  font-weight: 500;
+  font-size: 48px;
+  font-family: $font-poppins;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.84px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    left: 100px;
+    height: 1px;
+    background-color: $color-darker-gray;
+  }
+}
+
+.sign-up__text {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: $color-dark-gray;
+}
+
+.sign-up__form {
+  max-width: 772px;
+  margin: 0 auto;
+}
